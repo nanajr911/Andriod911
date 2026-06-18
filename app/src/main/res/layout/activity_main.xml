@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:animationCache="false"
-        android:background="#E91E63"
+        android:background="@drawable/bleu"
         tools:layout_editor_absoluteX="168dp"
         tools:layout_editor_absoluteY="-256dp">
 
@@ -53,6 +53,7 @@
             android:inputType="text"
             android:minHeight="48dp"
             android:textColor="#000000"
+            android:textColorHint="@color/white"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -70,6 +71,7 @@
             android:inputType="textPassword"
             android:minHeight="48dp"
             android:textColor="#000000"
+            android:textColorHint="@color/white"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -82,8 +84,8 @@
             android:layout_marginStart="60dp"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="60dp"
-            android:background="#F8F9FB"
-            android:backgroundTint="#572424"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
             android:backgroundTintMode="add"
             android:fontFamily="sans-serif-black"
             android:text="Login"
@@ -94,6 +96,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Welcome Back Customer"
+            android:textColor="#EFE8E8"
+            android:textColorLink="#E7DCDC"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/button"
+            app:layout_constraintStart_toStartOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
